@@ -1,6 +1,16 @@
 killport() {
     sudo kill -9 $(sudo fuser -n tcp $1 2> /dev/null);
 }
-export -f killport
+addtheme() {
+    echo $1 >> ~/aliases/zsh_themes/themes.txt
+    echo "$1 has been added."
+}
+removetheme() {
+    echo $1 >> ~/aliases/zsh_themes/broken_themes.txt
+    echo "$1 has been removed."
+}
 alias bashrc="vim ~/.bashrc && source ~/.bashrc"
-alias cd="cd .."
+setgitconfig() {
+    git config --global user.email $1
+    git config --global user.name $2
+}
