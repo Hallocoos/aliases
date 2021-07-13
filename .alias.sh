@@ -1,16 +1,9 @@
-killport() {
-    sudo kill -9 $(sudo fuser -n tcp $1 2> /dev/null);
-}
-addtheme() {
-    echo $1 >> ~/aliases/zsh_themes/themes.txt
-    echo "$1 has been added."
-}
-removetheme() {
-    echo $1 >> ~/aliases/zsh_themes/broken_themes.txt
-    echo "$1 has been removed."
-}
-alias bashrc="vim ~/.bashrc && source ~/.bashrc"
-setgitconfig() {
-    git config --global user.email $1
-    git config --global user.name $2
-}
+alias start_mysql=sudo service mysql start
+alias 
+alias 
+alias 
+alias 
+alias 
+alias 
+alias 
+alias start_mysql=sudo service mysql start
