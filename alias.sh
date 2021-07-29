@@ -16,13 +16,12 @@ setgitconfig() {
 }
 addalias() {
     echo "alias $1" >> ~/aliases/alias.sh
-    srczsh
+    src
 }
-
 ## Aliases
 alias bashrc="vim ~/.bashrc && source ~/.bashrc"
 alias zshrc="vim ~/.zshrc && source ~/.zshrc"
 alias srcbash="source ~/.bashrc"
 alias srczsh="source ~/.zshrc"
-alias src="source ~/.bashrc && source ~/.zshrc"
+alias src="srcbash && srczsh"
 alias start_mysql="sudo service mysql start"
